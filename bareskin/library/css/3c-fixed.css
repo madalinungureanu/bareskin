@@ -1,0 +1,94 @@
+/*
+LAYOUT: Three-Column
+DESCRIPTION: Three-column 960px fixed layout with two sidebars on either side of content
+*/
+
+/* =Structure
+-------------------------------------------------------------- */
+#inner-header,
+#main,
+#subsidiary-container,
+#inner-footer{
+	width:960px;
+}
+
+#branding{
+	margin:0 0 20px;
+	padding:20px 20px 0;
+}
+
+#branding hgroup{
+	overflow:hidden;
+}
+
+#inner-header{	
+	margin:0 auto;
+}
+
+#main-wrapper{
+	padding:0 20px;
+	margin:30px 0;
+	clear:both;
+}
+
+#main{	
+	margin:0 auto;
+}
+
+#main:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+#container{
+	float:left;
+	width:41.66666666666667%;
+	margin:0 2.083333333333333% 0 29.16666666666666%;
+}
+
+.full-width #container{
+	width:100%;
+	margin:0;
+}
+
+#content{
+	overflow:hidden;
+}
+
+#primary{
+	width:27.08333333333333%;
+	float:left;
+	margin-left:-72.91666666666667%
+}
+
+#secondary{
+	width:27.08333333333333%;
+	float:right;
+}
+
+#subsidiary-area{
+	padding:20px;
+	clear:both;
+}
+
+#subsidiary-container{	
+	overflow:hidden;
+	margin:0 auto;
+}
+
+#subsidiary-container > *{
+	width:33.33333333333333%;
+	float:left;
+}
+
+#colophon {
+	clear: both;
+	display: block;
+	margin:30px 0;
+	padding:0 20px;
+}
+
+#inner-footer{	
+	margin:0 auto;
+}
