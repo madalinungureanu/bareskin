@@ -19,7 +19,7 @@ function bareskin_theme_setup() {
 	add_theme_support( 'bareskin-theme-settings', array( 'about', 'footer', 'logo-favicon', 'archive-display', 'color-variations', 'style-minify' ) );
 	add_theme_support( 'bareskin-custom-background' );	
 	add_theme_support( 'bareskin-content-functions' );
-	add_theme_support( 'bareskin-sidebars', array( 'primary', 'secondary', 'subsidiary', 'subsidiary2', 'subsidiary3', 'new-sidebar' ) );
+	add_theme_support( 'bareskin-sidebars', array( 'primary', 'secondary', 'subsidiary', 'subsidiary2', 'subsidiary3', 'before-content', 'after-content' ) );
 	add_theme_support( 'bareskin-menus', array( 'primary', 'secondary' ) );
 	add_theme_support( 'bareskin-get-image' );	
 	add_theme_support( 'bareskin-breadcrumb' );	

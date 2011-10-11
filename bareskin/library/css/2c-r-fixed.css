@@ -15,6 +15,7 @@ DESCRIPTION: Two-column 960px fixed layout with one sidebar right of content
 #branding{
 	margin:0 0 20px;
 	padding:20px 20px 0;
+	display:block;
 }
 
 #branding hgroup{

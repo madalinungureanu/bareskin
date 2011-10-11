@@ -15,10 +15,14 @@ get_header(); ?>
 
 		<div id="container">
 			<div id="content" role="main">
-
+				
+				<?php get_sidebar( 'before-content' );?>
+				
 				<?php the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
+				
+				<?php get_sidebar( 'after-content' );?>
 
 				<?php comments_template( '', true ); ?>
 

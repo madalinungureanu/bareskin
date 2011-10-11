@@ -15,6 +15,7 @@ DESCRIPTION: Three-column 960px fixed layout with two sidebars on either side of
 #branding{
 	margin:0 0 20px;
 	padding:20px 20px 0;
+	display:block;
 }
 
 #branding hgroup{

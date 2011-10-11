@@ -32,4 +32,36 @@ function bareskin_register_menus() {
 
 }
 
+/* Add function to hook 'wp_get_nav_menu_items' */
+add_filter( 'wp_get_nav_menu_items',  'bareskin_modify_menu_display', 10, 3 );
+
+/**
+ * Add class has-children to menu item if it has children 
+ */
+function bareskin_modify_menu_display($items, $menu, $args){
+	
+	/* Define an array that will hold all the ids of the menu items that have childen*/
+	$menu_ids_that_have_childern = array();
+	
+	/* Populate the array by looping through all the menu items  */
+	foreach ( $items as $item ){       
+		
+		if( $item->menu_item_parent != '0'){
+			if( !in_array($item->menu_item_parent, $menu_ids_that_have_childern ) )
+				$menu_ids_that_have_childern[] = $item->menu_item_parent;			
+		}
+        
+    }
+	
+	/* Add class 'has-children' to the items that have tha id in the previously populated $menu_ids_that_have_childern array */
+	foreach ( $items as $item ){
+		if( in_array( $item->ID, $menu_ids_that_have_childern ) ){
+			$item->classes[] = 'has-children';
+		}
+	}
+
+	
+	return $items;
+}
+
 ?>
