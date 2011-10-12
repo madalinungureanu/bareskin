@@ -46,7 +46,7 @@ class Bareskin {
 		define( 'BARESKIN_ADMIN', trailingslashit( BARESKIN_DIR ) . 'admin' );
 
 		/* Sets the path to the core framework classes directory. */
-		define( 'BARESKIN_CLASSES', trailingslashit( BARESKIN_DIR ) . 'classes' );
+		define( 'BARESKIN_WIDGETS', trailingslashit( BARESKIN_DIR ) . 'widgets' );
 
 		/* Sets the path to the core framework extensions directory. */
 		define( 'BARESKIN_EXTENSIONS', trailingslashit( BARESKIN_DIR ) . 'extensions' );
@@ -174,6 +174,9 @@ class Bareskin {
 		
 		/* Load breadcrumb trail functions if supported. */
 		require_if_theme_supports( 'bareskin-breadcrumb', trailingslashit( BARESKIN_FUNCTIONS ) . 'breadcrumb-trail.php' );
+		
+		/* Load widgets functions if supported. */
+		require_if_theme_supports( 'bareskin-widgets', trailingslashit( BARESKIN_FUNCTIONS ) . 'widgets.php' );
 	}
 
 }
