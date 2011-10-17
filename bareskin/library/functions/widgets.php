@@ -34,5 +34,13 @@ function bareskin_register_widgets() {
 			register_widget( 'BareSkin_Widget_Advertisment' );
 		}
 		
+		/* Load the 'Advanced Recent Posts' widget if it is supported, and register it. */
+		if ( in_array( 'recent-posts', $supports[0] ) ){
+			require_once( trailingslashit( BARESKIN_WIDGETS ) . 'widget_adv_recent_posts.php' );
+			
+			/* Register the advertisment widget. */
+			register_widget( 'BareSkin_Widget_Advanced_Recent_Posts' );
+		}
+		
 	}	
 }

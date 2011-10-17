@@ -1,152 +1,152 @@
-#inner-header,
-#main,
-#subsidiary-container,
-#inner-footer{
-	width:auto;
-	max-width:960px;
-}
-
-@media screen and (max-width: 480px) {
-
-	/* Structure */	
-
-	#container{
-		width:100%;
-		margin-right:0%;		
-	}
-	
-	#primary, 
-	#secondary,
-	#subsidiary-container > *{
-		width:100%;
-		float:none;
-		clear:both;
-	}
-	
-	/* Header */
- 
-	#site-title {		
-		font-size:25px;		
-	}
-	
-	#site-title img{		
-		width:175px;
-		height:75px;
-	}
-
-	#site-title a{		
-		line-height:75px;
-		height:75px;
-	}
-	
-	#site-description {
-		display:none;
-	}
-	
-	/* Menu */
-
-	#branding #access{	
-		height:auto;		
-	}
-
-	#branding #access ul {		
-		margin: 0;
-	}	
-
-	#branding #access li {
-		float: none;
-	}
-
-	#branding #access a {
-		
-	}
-
-	#branding #access ul ul {
-		box-shadow: none;
-		-moz-box-shadow: none;
-		-webkit-box-shadow: none;
-		display: block;
-		float: none;
-		position: relative;	
-		margin-left:40px;
-		top:0;
-		z-index: 99999;
-	}
-	#branding #access ul ul ul {
-		position:relative;
-		left: 0;
-		top: 0;
-		margin-left:40px;
-	}
-	#branding #access ul ul a {
-		background: none;
-		line-height: 30px;
-		padding: 0 10px;
-		display:block;
-		width:auto;
-	}
-	
-	#branding #access ul ul a:hover {
-		background: #cecece;
-	}
-
-	/* Widgets */
-	
-	#subsidiary .widget,
-	#subsidiary-second .widget,
-	#subsidiary-third .widget{
-		padding:0px !important;
-	}
-	
-}
-
-@media screen and (max-width: 768px) {
-	/* Structure */	
-
-	#container{
-		width:100%;
-		margin-right:0%;		
-	}
-	
-	#primary, 
-	#secondary{
-		width:48%;
-		float:left;		
-	}
-	
-	#primary{
-		margin-right:4%;
-		clear:lfet;
-	}
-	
-	#subsidiary,
-	#subsidiary-second{
-		width:48%;
-		float:left;
-	}
-	
-	#subsidiary{
-		margin-right:4%;
-		clear:lfet;
-	}
-	
-	#subsidiary-third{
-		width:100%;
-	}
-	
-	#subsidiary .widget,
-	#subsidiary-second .widget,
-	#subsidiary-third .widget{
-		padding:0 !important;
-	}
-	
-	/* Header */
- 	
-	#branding #site-description {
-		float:none;
-		clear:both;
-		width:100%;
-		margin:15px 0;
-		text-align:left;
-	}
+#inner-header,
+#main,
+#subsidiary-container,
+#inner-footer{
+	width:auto;
+	max-width:960px;
+}
+
+@media screen and (max-width: 480px) {
+
+	/* Structure */	
+
+	#container{
+		width:100%;
+		margin-right:0%;		
+	}
+	
+	#primary, 
+	#secondary,
+	#subsidiary-container > *{
+		width:100%;
+		float:none;
+		clear:both;
+	}
+	
+	/* Header */
+ 
+	#site-title {		
+		font-size:25px;		
+	}
+	
+	#site-title img{		
+		width:175px;
+		height:75px;
+	}
+
+	#site-title a{		
+		line-height:75px;
+		height:75px;
+	}
+	
+	#site-description {
+		display:none;
+	}
+	
+	/* Menu */
+
+	#branding #access{	
+		height:auto;		
+	}
+
+	#branding #access ul {		
+		margin: 0;
+	}	
+
+	#branding #access li {
+		float: none;
+	}
+
+	#branding #access a {
+		
+	}
+
+	#branding #access ul ul {
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		display: block;
+		float: none;
+		position: relative;	
+		margin-left:40px;
+		top:0;
+		z-index: 99999;
+	}
+	#branding #access ul ul ul {
+		position:relative;
+		left: 0;
+		top: 0;
+		margin-left:40px;
+	}
+	#branding #access ul ul a {
+		background: none;
+		line-height: 30px;
+		padding: 0 10px;
+		display:block;
+		width:auto;
+	}
+	
+	#branding #access ul ul a:hover {
+		background: #cecece;
+	}
+
+	/* Widgets */
+	
+	#subsidiary .widget,
+	#subsidiary-second .widget,
+	#subsidiary-third .widget{
+		padding:0px !important;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	/* Structure */	
+
+	#container{
+		width:100%;
+		margin-right:0%;		
+	}
+	
+	#primary, 
+	#secondary{
+		width:48%;
+		float:left;		
+	}
+	
+	#primary{
+		margin-right:4%;
+		clear:lfet;
+	}
+	
+	#subsidiary,
+	#subsidiary-second{
+		width:48%;
+		float:left;
+	}
+	
+	#subsidiary{
+		margin-right:4%;
+		clear:lfet;
+	}
+	
+	#subsidiary-third{
+		width:100%;
+	}
+	
+	#subsidiary .widget,
+	#subsidiary-second .widget,
+	#subsidiary-third .widget{
+		padding:0 !important;
+	}
+	
+	/* Header */
+ 	
+	#branding #site-description {
+		float:none;
+		clear:both;
+		width:100%;
+		margin:15px 0;
+		text-align:left;
+	}
 }

@@ -1,4 +1,4 @@
-## Adding new theme settings ## 
+## Adding new theme settings ## 
 
 # Adding a box to the settings page:
  - you must use the "add_meta_boxes" action hook:
