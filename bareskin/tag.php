@@ -39,9 +39,9 @@ get_header(); ?>
 					?>
 
 				<?php endwhile; ?>
-
-				<?php get_template_part( 'nav-below' ); ?>
-
+				
+				<?php get_template_part( 'loop-nav' ); ?>
+				
 			<?php else : ?>
 
 				<article id="post-0" class="post no-results not-found">
