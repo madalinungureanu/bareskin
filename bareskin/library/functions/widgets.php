@@ -26,19 +26,19 @@ function bareskin_register_widgets() {
 	/* If there are any supported widgets, load them. */
 	if ( is_array( $supports[0] ) ) {
 
-		/* Load the 'Advertisment' widget if it is supported, and register it. */
-		if ( in_array( 'advertisment', $supports[0] ) ){
-			require_once( trailingslashit( BARESKIN_WIDGETS ) . 'widget_advertisment.php' );
+		/* Load the 'Advanced Text' widget if it is supported, and register it. */
+		if ( in_array( 'advanced-text', $supports[0] ) ){
+			require_once( trailingslashit( BARESKIN_WIDGETS ) . 'widget_advanced_text.php' );
 			
-			/* Register the advertisment widget. */
-			register_widget( 'BareSkin_Widget_Advertisment' );
+			/* Register the advanced text widget. */
+			register_widget( 'BareSkin_Advanced_Widget_Text' );
 		}
 		
 		/* Load the 'Advanced Recent Posts' widget if it is supported, and register it. */
 		if ( in_array( 'recent-posts', $supports[0] ) ){
 			require_once( trailingslashit( BARESKIN_WIDGETS ) . 'widget_adv_recent_posts.php' );
 			
-			/* Register the advertisment widget. */
+			/* Register the advanced recent posts widget. */
 			register_widget( 'BareSkin_Widget_Advanced_Recent_Posts' );
 		}
 		

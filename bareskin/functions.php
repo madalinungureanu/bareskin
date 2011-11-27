@@ -24,7 +24,7 @@ function bareskin_theme_setup() {
 	add_theme_support( 'bareskin-get-image' );	
 	add_theme_support( 'bareskin-breadcrumb' );	
 	add_theme_support( 'bareskin-shortcodes' );	
-	add_theme_support( 'bareskin-widgets', array( 'recent-posts' ) );	
+	add_theme_support( 'bareskin-widgets', array( 'recent-posts', 'advanced-text' ) );	
 	
 	add_theme_support( 'post-formats', array( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio' ) );
 	
