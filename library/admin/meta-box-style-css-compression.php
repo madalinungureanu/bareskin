@@ -26,7 +26,9 @@ add_filter( bareskin_get_prefix().'_add_to_validation', 'bareskin_meta_box_minif
  */
 function bareskin_meta_box_add_style_minify() {
 	global $bareskin_settings_page;
-	add_meta_box( 'bareskin-meta-box-style-minify', __( 'Style Minify', bareskin_get_textdomain() ), 'bareskin_meta_box_display_style_minify', $bareskin_settings_page, 'normal', 'high' );
+	
+	if( $bareskin_settings_page != null )
+		add_meta_box( 'bareskin-meta-box-style-minify', __( 'Style Minify', bareskin_get_textdomain() ), 'bareskin_meta_box_display_style_minify', $bareskin_settings_page, 'normal', 'high' );
 }
 
 

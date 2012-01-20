@@ -59,12 +59,14 @@ function bareskin_settings_page_init(){
 	//add_action( "load-{$bareskin_settings_page}", 'bareskin_load_settings_page_meta_boxes' );
 	
 	/* Create a hook for adding meta boxes. */
-	add_action( "load-{$bareskin_settings_page}", 'bareskin_settings_page_add_meta_boxes' );	
+	if( $bareskin_settings_page != null )
+		add_action( "load-{$bareskin_settings_page}", 'bareskin_settings_page_add_meta_boxes' );	
 	
 	/* Load the JavaScript and stylesheets needed for the theme settings screen. */
 	add_action( 'admin_enqueue_scripts', 'bareskin_settings_page_enqueue_scripts' );
 	add_action( 'admin_enqueue_scripts', 'bareskin_settings_page_enqueue_styles' );
-	add_action( "admin_head-{$bareskin_settings_page}", 'bareskin_settings_page_load_scripts' );
+	if( $bareskin_settings_page != null )
+		add_action( "admin_head-{$bareskin_settings_page}", 'bareskin_settings_page_load_scripts' );
 	
 }
 

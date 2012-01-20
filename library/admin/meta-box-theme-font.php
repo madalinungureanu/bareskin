@@ -24,7 +24,8 @@ function bareskin_meta_box_theme_add_font() {
 	$domain = bareskin_get_textdomain();	
 
 	/* Adds the About box for the parent theme. */
-	add_meta_box( 'bareskin-theme-font', __( 'Font Selection', $domain ), 'bareskin_meta_box_theme_display_font', $bareskin_settings_page, 'side', 'high' );	
+	if( $bareskin_settings_page != null )
+		add_meta_box( 'bareskin-theme-font', __( 'Font Selection', $domain ), 'bareskin_meta_box_theme_display_font', $bareskin_settings_page, 'side', 'high' );	
 
 }
 

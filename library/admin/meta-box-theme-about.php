@@ -25,7 +25,8 @@ function bareskin_meta_box_theme_add_about() {
 	$theme_data = get_theme_data( trailingslashit( STYLESHEETPATH ) . 'style.css' );
 
 	/* Adds the About box for the theme. */
-	add_meta_box( 'bareskin-about-theme', sprintf( __( 'About %1$s', $domain ), $theme_data['Title'] ), 'bareskin_meta_box_theme_display_about', $bareskin_settings_page, 'side', 'high' );	
+	if( $bareskin_settings_page != null )
+		add_meta_box( 'bareskin-about-theme', sprintf( __( 'About %1$s', $domain ), $theme_data['Title'] ), 'bareskin_meta_box_theme_display_about', $bareskin_settings_page, 'side', 'high' );	
 
 }
 

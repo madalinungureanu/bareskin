@@ -25,7 +25,8 @@ function bareskin_meta_box_add_archive_display() {
 	$domain = bareskin_get_textdomain();
 
 	/* Adds the Archive Display metabox for the theme. */
-	add_meta_box( 'bareskin-archive-display', __( 'Archives Display', $domain ), 'bareskin_meta_box_archive_display', $bareskin_settings_page, 'side', 'high' );	
+	if( $bareskin_settings_page != null )
+		add_meta_box( 'bareskin-archive-display', __( 'Archives Display', $domain ), 'bareskin_meta_box_archive_display', $bareskin_settings_page, 'side', 'high' );	
 
 }
 

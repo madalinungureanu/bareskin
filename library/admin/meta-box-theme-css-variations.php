@@ -22,7 +22,9 @@ add_filter( bareskin_get_prefix().'_add_to_validation', 'bareskin_meta_box_theme
  */
 function bareskin_meta_box_theme_add_color_variations() {
 	global $bareskin_settings_page;
-	add_meta_box( 'bareskin-meta-box-color-variations', __( 'Color Variations', bareskin_get_textdomain() ), 'bareskin_meta_box_theme_display_color_variations', $bareskin_settings_page, 'normal', 'high' );
+	
+	if( $bareskin_settings_page != null )
+		add_meta_box( 'bareskin-meta-box-color-variations', __( 'Color Variations', bareskin_get_textdomain() ), 'bareskin_meta_box_theme_display_color_variations', $bareskin_settings_page, 'normal', 'high' );
 }
 
 /**
