@@ -34,8 +34,9 @@ class BareSkin_Widget_Advanced_Recent_Posts extends WP_Widget {
 		$title = apply_filters('widget_title', empty($instance['title']) ? __('Recent Posts') : $instance['title'], $instance, $this->id_base);
 		if ( ! $number = absint( $instance['number'] ) )
  			$number = 10;			
-		if ( ! $category = absint( $instance['category'] ) )
- 			$number = -1;
+		
+		$category = $instance['category'];
+		
 		$posttype = $instance['posttype'];
 		$thumbnail = $instance['thumbnail'];
 		if ( ! $thumbnail_width = absint( $instance['thumbnail_width'] ) )
